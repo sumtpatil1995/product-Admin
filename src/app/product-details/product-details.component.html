@@ -1,0 +1,94 @@
+
+<section class="form-section">
+  <div>
+    <div class="main-div">
+      <div>
+        <a href="#" class="" routerLink="/dashboard" > <mat-icon>arrow_back</mat-icon></a>
+      </div>
+      <div class="title">
+        <span>
+          {{isEditMode ? "Edit Product" : "Add New Product"}}
+        </span>
+      </div>
+      <form [formGroup]="productDetailsForm" (ngSubmit)="onFormSubmit()">
+        <div class="row">
+          <div class="col">
+            <input
+              type="text"
+              formControlName="productName"
+              placeholder=" Product Name"
+              name="name"
+            />
+            <div
+              *ngIf="isFormSubmitted && form.productName.errors"
+              class="invalid--field"
+            >
+              <div *ngIf="form.productName.errors.required">
+                Product name is required
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!--  -->
+            <input
+              type="number"
+              formControlName="productPrice"
+              placeholder=" Price"
+              name="productPrice"
+            />
+            <div
+              *ngIf="isFormSubmitted && form.productPrice.errors"
+              class="invalid--field"
+            >
+              <div *ngIf="form.productPrice.errors.required">
+                Product price is required
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <input
+              type="number"
+              formControlName="productQuantity"
+              placeholder=" Product Quantity"
+              name="productQuantity"
+            />
+            <div
+              *ngIf="isFormSubmitted && form.productQuantity.errors"
+              class="invalid--field"
+            >
+              <div *ngIf="form.productQuantity.errors.required">
+                Product Quantity is required
+              </div>
+            </div>
+          </div>
+          <div class="col mt-2">
+            <!--  -->
+            <textarea type="text"
+            formControlName="productDescription"
+            placeholder=" Product Description"
+            name="productDescription"
+            maxlength="151"
+             cols="30" rows="6"></textarea>
+            <div
+              *ngIf="isFormSubmitted && form.productDescription.errors"
+              class="invalid--field"
+            >
+              <div *ngIf="form.productDescription.errors.required">
+                Product Description is required
+              </div>
+            </div>
+            <div  class="invalid--field-2" *ngIf="form.productDescription.errors">
+              <div *ngIf="form.productDescription.errors.maxlength">
+                Product Description reached maximum character limit 150.
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+        <div class="row mt-2">
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

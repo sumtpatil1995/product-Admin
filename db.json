@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "productName": "product 2",
+      "productDescription": "test product",
+      "productQuantity": 500,
+      "productPrice": 60,
+      "id": 5
+    },
+    {
+      "productName": "product 3",
+      "productDescription": "test product desc",
+      "productQuantity": 25,
+      "productPrice": 500,
+      "id": 7
+    }
+  ]
+}

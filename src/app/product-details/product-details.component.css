@@ -1,0 +1,128 @@
+.form-section{
+  display: flex;
+  width: 100vw;
+  height: 55vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.main-div{
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+  padding: 10px;
+}
+
+.nac-link{
+  font-size: 25px;
+}
+
+a{
+  font-size: 25px;
+}
+.nav-btn{
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.8vh;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+  background-color: #cccccc;
+  width: 7vw;
+}
+
+
+.title{
+  font-size: 25px;
+    font-weight: 300;
+    font-family: sans-serif;
+    margin: 1rem 1rem 1rem;
+}
+
+form{
+  /* display: flex; */
+  align-items: center;
+  flex-direction: column;
+  object-fit: contain;
+  height: fit-content;
+  padding: 1rem;
+  justify-content: center;
+}
+
+input , button {
+  outline: none;
+  border: none;
+  font-weight: 500;
+  width: 15rem;
+  margin: 1rem;
+  height: 4.5vh;
+  border-radius: 0.5vw;
+  object-fit: contain;
+  transition: -webkit-transform 0.45s;
+  transition: transform 0.45s;
+  transition: transform 0.45s, -webkit-transform 0.45s;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input {
+  font-size: 1.5vh;
+  border: none !important;
+  border-bottom: 1px solid #c5c5c5 !important;
+  border-radius: 0 !important;
+}
+
+textarea{
+  border-color: #c5c5c5;
+}
+
+
+input:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  border: 2px solid #ff7977 !important;
+  border-radius: 5px !important;
+}
+
+button {
+  font-size: 1.8vh;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 1rem;
+  background-color: #334155;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+button:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.invalid--field {
+  margin-left: 1.2rem;
+  align-items: flex-start;
+  width: 95%;
+  font-weight: 600;
+  color: rgb(193, 53, 21) !important;
+  font-size: 12px !important;
+}
+
+.invalid--field-2{
+  margin-left: 1.2rem;
+  align-items: flex-start;
+  width: 95%;
+  font-weight: 600;
+  color: rgb(233, 175, 17) !important;
+  font-size: 12px !important;
+}

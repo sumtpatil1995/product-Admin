@@ -1,0 +1,16 @@
+.cfm-btn{
+  color: #fff;
+  margin-right: 1rem;
+  background-color: #334155;
+
+}
+
+button{
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.8vh;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+}

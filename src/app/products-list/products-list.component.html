@@ -1,0 +1,36 @@
+<!-- <h3 class="m-3 p-2">Product List</h3> -->
+<div class="title">
+  <span>
+    Product List
+  </span>
+</div>
+<div class="btn-div">
+  <a href="#" class="nav-link" routerLink="/product" > Add New Product</a>
+</div>
+<section>
+  <div class="main-div">
+  <table class="table">
+      <thead>
+          <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th></th>
+              <th></th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let product of productList">
+              <td data-label="ID">{{product.id}}</td>
+              <td data-label="Name">{{product.productName}}</td>
+              <td data-label="Quantity">{{product.productQuantity}}</td>
+              <td data-label="Price">INR {{product.productPrice}}</td>
+              <td data-label="Edit" class="vw-1"> <a class="act-btn"><span  (click)="updateProduct(product.id)"> <mat-icon>mode_edit</mat-icon></span></a></td>
+              <td data-label="Delete" class="vw-1"> <a class="act-btn"> <span  (click)="openConfirmationDialog(product)"><mat-icon>delete</mat-icon></span> </a></td>
+          </tr>
+      </tbody>
+  </table>
+  </div>
+</section>
+
